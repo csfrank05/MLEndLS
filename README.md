@@ -17,6 +17,20 @@ In the project, we aim to solve two machine learning problems.
 - Methodology
   - Training (convolutional NNs in time?)
   - Validation (incl. performance assessment)
+  
+### Basic problem
+- Clean outliers
+- Preprocessing: Audio Scene Analysis (ASA)
+  - divide sample into frames
+  - multiply frames by window function
+- Transformation: feature extraction by Acoustic Background Spectrum (ABS)
+  - power spectrogram
+  - transient noise rejection (requires validation, 5th percentile loudness should work
+  - take logs
+  - (optional) normalise
+- Methodology
+  - kNN binary classification
+  - CNN?
 
 ## Dataset
 - Describe the dataset, preprocessing, exploratory visualisations
